@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Visualizza corsi</title>
+</head>
+<body>
+
+	<h1>Lista corsi universitari</h1>
+	<hr>
+	<table>
+		<div th:each="c: ${corsiList}">
+			<tr>
+				<td th:text="${c.codiceCorso}"></td>
+				<td th:text="${c.nome}"></td>
+				<td th:text="${c.indirizzo}"></td>
+				<td th:text="${c.esami}"></td>
+			</tr>
+		</div>
+
+	</table>
+	
+	
+</body>
+<a href="http://localhost:8080/index">Torna alla Home</a><br>
+</html>
+

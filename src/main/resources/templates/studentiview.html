@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Visualizza studenti</title>
+</head>
+<body>
+
+	<h1>Lista studenti</h1>
+	<table>
+		<div th:each="s: ${studentiList}">
+			<tr>
+				<td th:text="${s.matricola}"></td>
+				<td th:text="${s.nome}"></td>
+				<td th:text="${s.cognome}"></td>
+				<td th:text="${s.dataNascita}"></td>
+				<td th:text="${s.email}"></td>
+				<td th:text="${s.indirizzo}"></td>
+				<td th:text="${s.cittaResidenza}"></td>
+				<td th:text="${s.corsoLaurea}"></td>
+
+
+
+			</tr>
+		</div>
+
+	</table>
+	<br>
+
+</body>
+<a href="http://localhost:8080/index">Torna alla Home</a>
+<br>
+</html>
+
